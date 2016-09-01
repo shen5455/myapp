@@ -17,11 +17,11 @@
         left: 0px;
     }
     
-    @media screen and (max-width: 380px) {
+    @media screen and (max-width: 500px) {
         div.cover {
             background: lightgray;
-            perspective: 400px;
-            -webkit-perspective: 400px;
+            perspective: 500px;
+            -webkit-perspective: 500px;
             transform-style: preserve-3d;
             -webkit-transform-style: preserve-3d;
         }
@@ -29,7 +29,7 @@
             height: 80%;
             position: absolute;
             top: -136%;
-            left: 8%;
+            left: 6%;
             opacity: 0;
             border: none;
             -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.4)));
@@ -37,7 +37,7 @@
     }
     /* 设置了浏览器宽度不大于1200px时 abc 显示900px宽度 */
     
-    @media screen and (min-width: 381px) {
+    @media screen and (min-width: 501px) {
         div.cover {
             background: lightgray;
             perspective: 500px;
