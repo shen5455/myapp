@@ -1,40 +1,291 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'cnpm',
+1 verbose cli   '--registry=https://registry.npm.taobao.org' ]
 2 info using npm@2.15.8
 3 info using node@v4.4.7
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info prestart myapp@0.0.0
-6 info start myapp@0.0.0
-7 verbose unsafe-perm in lifecycle true
-8 info myapp@0.0.0 Failed to exec start script
-9 verbose stack Error: myapp@0.0.0 start: `node ./bin/www`
-9 verbose stack Exit status 1
-9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
-9 verbose stack     at emitTwo (events.js:87:13)
-9 verbose stack     at EventEmitter.emit (events.js:172:7)
-9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-9 verbose stack     at emitTwo (events.js:87:13)
-9 verbose stack     at ChildProcess.emit (events.js:172:7)
-9 verbose stack     at maybeClose (internal/child_process.js:827:16)
-9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-10 verbose pkgid myapp@0.0.0
-11 verbose cwd /Users/admin/work/myapp
-12 error Darwin 15.6.0
-13 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
-14 error node v4.4.7
-15 error npm  v2.15.8
-16 error code ELIFECYCLE
-17 error myapp@0.0.0 start: `node ./bin/www`
-17 error Exit status 1
-18 error Failed at the myapp@0.0.0 start script 'node ./bin/www'.
-18 error This is most likely a problem with the myapp package,
-18 error not with npm itself.
-18 error Tell the author that this fails on your system:
-18 error     node ./bin/www
-18 error You can get information on how to open an issue for this project with:
-18 error     npm bugs myapp
-18 error Or if that isn't available, you can get their info via:
-18 error
-18 error     npm owner ls myapp
-18 error There is likely additional logging output above.
-19 verbose exit [ 1, true ]
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'cnpm', null ]
+7 verbose cache add spec cnpm
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'cnpm',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'cnpm',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed cnpm@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for cnpm
+11 info addNameTag [ 'cnpm', 'latest' ]
+12 silly mapToRegistry name cnpm
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npm.taobao.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'cnpm',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'cnpm',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npm.taobao.org/cnpm
+17 verbose addNameTag registry:https://registry.npm.taobao.org/cnpm not in flight; fetching
+18 verbose request uri https://registry.npm.taobao.org/cnpm
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 16:50:00
+21 verbose request id 31b6f308942c669d
+22 verbose etag "22da1-8hu1TD1pfrizMnPYDyg+Dg"
+23 http request GET https://registry.npm.taobao.org/cnpm
+24 http 200 https://registry.npm.taobao.org/cnpm
+25 verbose headers { date: 'Sun, 18 Sep 2016 08:50:00 GMT',
+25 verbose headers   'content-type': 'application/json; charset=utf-8',
+25 verbose headers   'content-length': '150273',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-current-requests': '1',
+25 verbose headers   etag: '"24b01-Ly77aN5MtBMjOXSXXT6bbg"',
+25 verbose headers   'x-readtime': '31' }
+26 silly get cb [ 200,
+26 silly get   { date: 'Sun, 18 Sep 2016 08:50:00 GMT',
+26 silly get     'content-type': 'application/json; charset=utf-8',
+26 silly get     'content-length': '150273',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-current-requests': '1',
+26 silly get     etag: '"24b01-Ly77aN5MtBMjOXSXXT6bbg"',
+26 silly get     'x-readtime': '31' } ]
+27 verbose get saving cnpm to /Users/admin/.npm/registry.npm.taobao.org/cnpm/.cache.json
+28 verbose correctMkdir /Users/admin/.npm correctMkdir not in flight; initializing
+29 silly addNameTag next cb for cnpm with tag latest
+30 silly addNamed cnpm@4.3.2
+31 verbose addNamed "4.3.2" is a plain semver version for cnpm
+32 silly mapToRegistry name cnpm
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npm.taobao.org/
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: 'cnpm',
+35 silly mapToRegistry   scope: null,
+35 silly mapToRegistry   name: 'cnpm',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag' }
+36 silly mapToRegistry uri https://registry.npm.taobao.org/cnpm
+37 verbose addRemoteTarball https://registry.npm.taobao.org/cnpm/download/cnpm-4.3.2.tgz not in flight; adding
+38 verbose addRemoteTarball [ 'https://registry.npm.taobao.org/cnpm/download/cnpm-4.3.2.tgz',
+38 verbose addRemoteTarball   '6f68e594a19503f183f0b306b309b10ab27d4451' ]
+39 info retry fetch attempt 1 at 16:50:00
+40 info attempt registry request try #1 at 16:50:00
+41 http fetch GET https://registry.npm.taobao.org/cnpm/download/cnpm-4.3.2.tgz
+42 http fetch 200 https://registry.npm.taobao.org/cnpm/download/cnpm-4.3.2.tgz
+43 silly fetchAndShaCheck shasum 6f68e594a19503f183f0b306b309b10ab27d4451
+44 verbose addTmpTarball /var/folders/9t/73lw20ln51gbnbxrtqpjs9t80000gn/T/npm-519-50e3198c/registry.npm.taobao.org/cnpm/download/cnpm-4.3.2.tgz not in flight; adding
+45 verbose addTmpTarball already have metadata; skipping unpack for cnpm@4.3.2
+46 verbose correctMkdir /Users/admin/.npm correctMkdir not in flight; initializing
+47 silly cache afterAdd cnpm@4.3.2
+48 verbose afterAdd /Users/admin/.npm/cnpm/4.3.2/package/package.json not in flight; writing
+49 verbose correctMkdir /Users/admin/.npm correctMkdir not in flight; initializing
+50 verbose afterAdd /Users/admin/.npm/cnpm/4.3.2/package/package.json written
+51 silly install resolved [ { name: 'cnpm',
+51 silly install resolved     version: '4.3.2',
+51 silly install resolved     description: 'cnpm: npm client for cnpmjs.org',
+51 silly install resolved     main: 'bin/cnpm',
+51 silly install resolved     scripts: { test: 'mocha test/*.test.js --timeout 60000' },
+51 silly install resolved     preferGlobal: true,
+51 silly install resolved     bin:
+51 silly install resolved      { cnpm: './bin/cnpm',
+51 silly install resolved        'cnpm-check': './bin/cnpm-check',
+51 silly install resolved        'cnpm-sync': './bin/cnpm-sync',
+51 silly install resolved        'cnpm-web': './bin/cnpm-web',
+51 silly install resolved        'cnpm-user': './bin/cnpm-user',
+51 silly install resolved        'cnpm-doc': './bin/cnpm-doc',
+51 silly install resolved        'cnpm-search': './bin/cnpm-search' },
+51 silly install resolved     dependencies:
+51 silly install resolved      { 'auto-correct': '^1.0.0',
+51 silly install resolved        bagpipe: '^0.3.5',
+51 silly install resolved        colors: '^1.0.3',
+51 silly install resolved        commander: '^2.9.0',
+51 silly install resolved        'cross-spawn': '~0.2.8',
+51 silly install resolved        debug: '^2.2.0',
+51 silly install resolved        giturl: '^1.0.0',
+51 silly install resolved        npm: '^3.10.5',
+51 silly install resolved        'npm-request': '~0.0.4',
+51 silly install resolved        open: '~0.0.5',
+51 silly install resolved        urllib: '^2.8.0',
+51 silly install resolved        npminstall: '^2.1.0' },
+51 silly install resolved     devDependencies:
+51 silly install resolved      { autod: '*',
+51 silly install resolved        'fs-extra': '0',
+51 silly install resolved        jshint: '2',
+51 silly install resolved        mocha: '2',
+51 silly install resolved        should: '5' },
+51 silly install resolved     homepage: 'https://github.com/cnpm/cnpm',
+51 silly install resolved     repository:
+51 silly install resolved      { type: 'git',
+51 silly install resolved        url: 'git://github.com/cnpm/cnpm.git',
+51 silly install resolved        web: 'https://github.com/cnpm/cnpm' },
+51 silly install resolved     bugs:
+51 silly install resolved      { url: 'https://github.com/cnpm/cnpm/issues',
+51 silly install resolved        email: 'm@fengmk2.com' },
+51 silly install resolved     keywords: [ 'cnpm' ],
+51 silly install resolved     engines: { node: '>= 4.3.2' },
+51 silly install resolved     author:
+51 silly install resolved      { name: 'fengmk2',
+51 silly install resolved        email: 'm@fengmk2.com',
+51 silly install resolved        url: 'http://fengmk2.com' },
+51 silly install resolved     license: 'MIT',
+51 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+51 silly install resolved     gitHead: 'dd8300e51ce96c77989c811c4e7cfc1bc7a9db78',
+51 silly install resolved     _id: 'cnpm@4.3.2',
+51 silly install resolved     _shasum: '6f68e594a19503f183f0b306b309b10ab27d4451',
+51 silly install resolved     _from: 'cnpm@latest',
+51 silly install resolved     _npmVersion: '3.10.3',
+51 silly install resolved     _nodeVersion: '6.4.0',
+51 silly install resolved     _npmUser: { name: 'fengmk2', email: 'fengmk2@gmail.com' },
+51 silly install resolved     dist:
+51 silly install resolved      { shasum: '6f68e594a19503f183f0b306b309b10ab27d4451',
+51 silly install resolved        size: 9646,
+51 silly install resolved        noattachment: false,
+51 silly install resolved        tarball: 'http://registry.npm.taobao.org/cnpm/download/cnpm-4.3.2.tgz' },
+51 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+51 silly install resolved     _npmOperationalInternal:
+51 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+51 silly install resolved        tmp: 'tmp/cnpm-4.3.2.tgz_1472004769388_0.26447760546579957' },
+51 silly install resolved     directories: {},
+51 silly install resolved     publish_time: 1472004771796,
+51 silly install resolved     _cnpm_publish_time: 1472004771796,
+51 silly install resolved     _resolved: 'https://registry.npm.taobao.org/cnpm/download/cnpm-4.3.2.tgz' } ]
+52 info install cnpm@4.3.2 into /usr/local/lib
+53 info installOne cnpm@4.3.2
+54 verbose installOne of cnpm to /usr/local/lib not in flight; installing
+55 verbose correctMkdir /Users/admin/.npm/_locks correctMkdir not in flight; initializing
+56 verbose lock using /Users/admin/.npm/_locks/cnpm-723f324a9e509f07.lock for /usr/local/lib/node_modules/cnpm
+57 silly install write writing cnpm 4.3.2 to /usr/local/lib/node_modules/cnpm
+58 verbose unbuild lib/node_modules/cnpm
+59 info preuninstall cnpm@4.2.0
+60 info uninstall cnpm@4.2.0
+61 verbose unbuild rmStuff cnpm@4.2.0 from /usr/local/lib/node_modules
+62 silly gentlyRm /usr/local/bin/cnpm is being gently removed
+63 silly gentlyRm verifying /usr/local is an npm working directory
+64 silly gentlyRm /usr/local/bin/cnpm-check is being gently removed
+65 silly gentlyRm verifying /usr/local is an npm working directory
+66 silly gentlyRm /usr/local/bin/cnpm-sync is being gently removed
+67 silly gentlyRm verifying /usr/local is an npm working directory
+68 silly gentlyRm /usr/local/bin/cnpm-web is being gently removed
+69 silly gentlyRm verifying /usr/local is an npm working directory
+70 silly gentlyRm /usr/local/bin/cnpm-user is being gently removed
+71 silly gentlyRm verifying /usr/local is an npm working directory
+72 silly gentlyRm /usr/local/bin/cnpm-doc is being gently removed
+73 silly gentlyRm verifying /usr/local is an npm working directory
+74 silly gentlyRm /usr/local/bin/cnpm-search is being gently removed
+75 silly gentlyRm verifying /usr/local is an npm working directory
+76 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+77 silly gentlyRm deletion target /usr/local/bin/cnpm is under /usr/local
+78 verbose gentlyRm vacuuming from /usr/local/bin/cnpm up to /usr/local
+79 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+80 silly gentlyRm deletion target /usr/local/bin/cnpm-check is under /usr/local
+81 verbose gentlyRm vacuuming from /usr/local/bin/cnpm-check up to /usr/local
+82 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+83 silly gentlyRm deletion target /usr/local/bin/cnpm-sync is under /usr/local
+84 verbose gentlyRm vacuuming from /usr/local/bin/cnpm-sync up to /usr/local
+85 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+86 silly gentlyRm deletion target /usr/local/bin/cnpm-web is under /usr/local
+87 verbose gentlyRm vacuuming from /usr/local/bin/cnpm-web up to /usr/local
+88 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+89 silly gentlyRm deletion target /usr/local/bin/cnpm-user is under /usr/local
+90 verbose gentlyRm vacuuming from /usr/local/bin/cnpm-user up to /usr/local
+91 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+92 silly gentlyRm deletion target /usr/local/bin/cnpm-doc is under /usr/local
+93 verbose gentlyRm vacuuming from /usr/local/bin/cnpm-doc up to /usr/local
+94 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+95 silly gentlyRm deletion target /usr/local/bin/cnpm-search is under /usr/local
+96 verbose gentlyRm vacuuming from /usr/local/bin/cnpm-search up to /usr/local
+97 silly vacuum-fs removing /usr/local/bin/cnpm
+98 silly vacuum-fs removing /usr/local/bin/cnpm-check
+99 silly vacuum-fs removing /usr/local/bin/cnpm-sync
+100 silly vacuum-fs removing /usr/local/bin/cnpm-web
+101 silly vacuum-fs removing /usr/local/bin/cnpm-user
+102 silly vacuum-fs removing /usr/local/bin/cnpm-doc
+103 silly vacuum-fs removing /usr/local/bin/cnpm-search
+104 silly vacuum-fs quitting because other entries in /usr/local/bin
+105 silly vacuum-fs quitting because other entries in /usr/local/bin
+106 silly vacuum-fs quitting because other entries in /usr/local/bin
+107 silly vacuum-fs quitting because other entries in /usr/local/bin
+108 silly vacuum-fs quitting because other entries in /usr/local/bin
+109 silly vacuum-fs quitting because other entries in /usr/local/bin
+110 silly vacuum-fs quitting because other entries in /usr/local/bin
+111 info postuninstall cnpm@4.2.0
+112 silly gentlyRm /usr/local/lib/node_modules/cnpm is being purged from base /usr/local
+113 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/cnpm
+114 silly vacuum-fs purging /usr/local/lib/node_modules/cnpm
+115 verbose unlock done using /Users/admin/.npm/_locks/cnpm-723f324a9e509f07.lock for /usr/local/lib/node_modules/cnpm
+116 verbose stack Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/cnpm'
+116 verbose stack     at Error (native)
+117 verbose cwd /Users/admin/work/myapp
+118 error Darwin 15.6.0
+119 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "cnpm" "--registry=https://registry.npm.taobao.org"
+120 error node v4.4.7
+121 error npm  v2.15.8
+122 error path /usr/local/lib/node_modules/cnpm
+123 error code EACCES
+124 error errno -13
+125 error syscall rmdir
+126 error Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/cnpm'
+126 error     at Error (native)
+126 error  { [Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/cnpm']
+126 error   errno: -13,
+126 error   code: 'EACCES',
+126 error   syscall: 'rmdir',
+126 error   path: '/usr/local/lib/node_modules/cnpm' }
+127 error Please try running this command again as root/Administrator.
+128 verbose exit [ -13, true ]
+129 verbose unbuild lib/node_modules/cnpm
+130 info preuninstall cnpm@4.2.0
+131 info uninstall cnpm@4.2.0
+132 verbose unbuild rmStuff cnpm@4.2.0 from /usr/local/lib/node_modules
+133 silly gentlyRm /usr/local/bin/cnpm is being gently removed
+134 silly gentlyRm verifying /usr/local is an npm working directory
+135 silly gentlyRm /usr/local/bin/cnpm-check is being gently removed
+136 silly gentlyRm verifying /usr/local is an npm working directory
+137 silly gentlyRm /usr/local/bin/cnpm-sync is being gently removed
+138 silly gentlyRm verifying /usr/local is an npm working directory
+139 silly gentlyRm /usr/local/bin/cnpm-web is being gently removed
+140 silly gentlyRm verifying /usr/local is an npm working directory
+141 silly gentlyRm /usr/local/bin/cnpm-user is being gently removed
+142 silly gentlyRm verifying /usr/local is an npm working directory
+143 silly gentlyRm /usr/local/bin/cnpm-doc is being gently removed
+144 silly gentlyRm verifying /usr/local is an npm working directory
+145 silly gentlyRm /usr/local/bin/cnpm-search is being gently removed
+146 silly gentlyRm verifying /usr/local is an npm working directory
+147 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+148 silly gentlyRm deletion target /usr/local/bin/cnpm is under /usr/local
+149 verbose gentlyRm vacuuming from /usr/local/bin/cnpm up to /usr/local
+150 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+151 silly gentlyRm deletion target /usr/local/bin/cnpm-check is under /usr/local
+152 verbose gentlyRm vacuuming from /usr/local/bin/cnpm-check up to /usr/local
+153 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+154 silly gentlyRm deletion target /usr/local/bin/cnpm-sync is under /usr/local
+155 verbose gentlyRm vacuuming from /usr/local/bin/cnpm-sync up to /usr/local
+156 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+157 silly gentlyRm deletion target /usr/local/bin/cnpm-web is under /usr/local
+158 verbose gentlyRm vacuuming from /usr/local/bin/cnpm-web up to /usr/local
+159 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+160 silly gentlyRm deletion target /usr/local/bin/cnpm-user is under /usr/local
+161 verbose gentlyRm vacuuming from /usr/local/bin/cnpm-user up to /usr/local
+162 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+163 silly gentlyRm deletion target /usr/local/bin/cnpm-doc is under /usr/local
+164 verbose gentlyRm vacuuming from /usr/local/bin/cnpm-doc up to /usr/local
+165 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+166 silly gentlyRm deletion target /usr/local/bin/cnpm-search is under /usr/local
+167 verbose gentlyRm vacuuming from /usr/local/bin/cnpm-search up to /usr/local
+168 info postuninstall cnpm@4.2.0
+169 silly gentlyRm /usr/local/lib/node_modules/cnpm is being purged from base /usr/local
+170 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/cnpm
+171 silly vacuum-fs purging /usr/local/lib/node_modules/cnpm
+172 error error rolling back Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/cnpm'
+172 error error rolling back     at Error (native)
+172 error error rolling back  { [Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/cnpm']
+172 error error rolling back   errno: -13,
+172 error error rolling back   code: 'EACCES',
+172 error error rolling back   syscall: 'rmdir',
+172 error error rolling back   path: '/usr/local/lib/node_modules/cnpm' }
