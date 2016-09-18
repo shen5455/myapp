@@ -11,6 +11,7 @@ var juicerExpressAdapter = require('juicer-express-adapter');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+// var email = require('./routes/email');
 
 
 var app = express();
@@ -39,7 +40,7 @@ app.engine('html', juicerExpressAdapter);
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
-	extended: true
+	extended: false
 }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));

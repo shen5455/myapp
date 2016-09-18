@@ -14,6 +14,7 @@
     "jade": "~1.11.0",
     "juicer-express-adapter": "^0.1.10",
     "morgan": "~1.7.0",
+    "nodemailer": "~0.7.1",
     "serve-favicon": "~2.3.0"
   }
 }
